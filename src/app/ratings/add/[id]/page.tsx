@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import styles from "../page.module.css";
 import RatingStarsSubmit from '../../../components/RatingStarsSubmit';
+import styles from '../../../page.module.css';
 
 import {
   Container,
@@ -142,7 +142,7 @@ export default function AddRating({ params }: { params: { id: string } }) {
                     <Input placeholder="Your username" name="username" value={username} onChange={e => onChange(e)} required/>
                     <Heading size='md' mt={5} mb={2}>Rating</Heading>
                     <Box>
-                    <input type="range" min="1" max="10" name="rating" value={rating} onChange={e => onChange(e)} style={{width: "100%", bottom: "-125px !important", position: "relative", opacity: "0", height: "95px;"}} required/>
+                    <input type="range" min="1" max="10" name="rating" value={rating} onChange={e => onChange(e)} id="ratingRange" className={styles.ratingrange} required/>
                     <RatingStarsSubmit rating={rating}/>
                     </Box>
                     <Heading size='md' mt={5} mb={2}>Description</Heading>

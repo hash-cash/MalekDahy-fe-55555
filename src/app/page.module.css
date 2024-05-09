@@ -228,3 +228,12 @@
     transform: rotate(0deg);
   }
 }
+
+
+.ratingrange {
+  width: 100% !important;
+  bottom: -125px !important;
+  position: relative !important;
+  opacity: 0 !important;
+  height: 95px !important;
+}
